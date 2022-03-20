@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  font-size: 120%;
+}
+
+.card {
+  background: #000;
+  color: whitesmoke;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  opacity: 85%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #333333;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #333333;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+#search:hover {
+  background: #555555;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: #333333;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  z-index: 1;
+  font-size: px;
+  border: none;
+  outline: none;
+  background-color: linear-gradient(black, white);
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  scroll-behavior: smooth;
+  border-radius: 16px;
+}
+
+#myBtn:hover {
+  background-color: #333333;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 2;
+  /* top: -5px; */
+  right: 105%;
+  font-size: 16px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
